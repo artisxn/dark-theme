@@ -1,0 +1,45 @@
+{
+    "name": "codicastudio/dark-theme",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "type": "library",
+    "homepage": "https://github.com/codicastudio/dark-theme",
+    "authors": [
+        {
+            "name": "David Griffiths",
+            "homepage": "https://github.com/codicastudio",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/codicastudio/dark-theme/issues",
+        "source": "https://github.com/codicastudio/dark-theme"
+    },
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "codicastudio\\DarkTheme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "codicastudio\\DarkTheme\\ThemeServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
